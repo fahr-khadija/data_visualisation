@@ -6,13 +6,13 @@ You've just joined Pymaceuticals, Inc., a new pharmaceutical company that specia
 As a senior data analyst at the company, you've been given access to the complete data from their most recent animal study. In this study, 249 mice who were identified with SCC tumors received treatment with a range of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals’ drug of interest, Capomulin, against the other treatment regimens.
 
 The executive team has tasked you with generating all of the tables and figures needed for the technical report of the clinical study. They have also asked you for a top-level summary of the study results.
+## Table Of Contents 
+### Instructions
+     This assignment is broken down into the following tasks:
 
-# Instructions
-This assignment is broken down into the following tasks:
 
-## *Prepare the data.
-
-## *Generate summary statistics.
+* ### [*Prepare the data](https://github.com/Fahr-khadija/data_visualisation#Prepare-the-data)
+  ## *Generate summary statistics.
 
 ## *Create bar charts and pie charts.
 
@@ -23,6 +23,12 @@ This assignment is broken down into the following tasks:
 ## *Calculate correlation and regression.
 
 Submit your final analysis.
+## Table Of Contents 
+ 
+  
+    * #### [Setting up libraries & lab instances](https://github.com/Fahr-khadija/phd#setup-the-lab-instance-with-libraries-and-verilog-files)
+    * #### [Simulation using iverilog Tool](https://github.com/Fahr-khadija/phd#simulation-using-iverilog-open-source-tool)
+    * #### [Synthesis using YOSYS Tool](https://github.com/Fahr-khadija/phd#synthesis-using-yosys-open-source-tool)
 
 Prepare the Data
 Run the provided package dependency and data imports, and then merge the mouse_metadata and study_results DataFrames into a single DataFrame.
