@@ -10,6 +10,10 @@ The executive team has tasked you with generating all of the tables and figures 
 ### Instructions
      This assignment is broken down into the following tasks:
 
+![image](https://github.com/fahr-khadija/data_visualisation/assets/100168693/92c858a7-7019-4a29-bf2d-d9c75461411a)
+<img src="">
+
+
 
 * ### [*Prepare the data](https://github.com/Fahr-khadija/data_visualisation#Prepare-the-data)
   ## *Generate summary statistics.
