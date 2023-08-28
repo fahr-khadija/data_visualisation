@@ -14,7 +14,6 @@ The executive team has tasked you with generating all of the tables and figures 
 <img src="">
 
 
-
 * ### [*Prepare the data](https://github.com/Fahr-khadija/data_visualisation#Prepare-the-data)
 * ### [*Create bar charts and pie charts](https://github.com/Fahr-khadija/data_visualisation#Create-bar-charts-and-pie-charts)
 * ### [*Calculate quartiles, find outliers, and create a box plot.](https://github.com/Fahr-khadija/data_visualisation#Calculate-quartiles,-find-outliers,-and-create-a-box-plot.)
@@ -25,6 +24,8 @@ The executive team has tasked you with generating all of the tables and figures 
 
 ## *Prepare the Data
 Run the provided package dependency and data imports, and then merge the mouse_metadata and study_results DataFrames into a single DataFrame.
+![image](https://carbon.now.sh/?bg=rgba%2874%2C144%2C226%2C1%29&t=a11y-dark&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2523%2520Dependencies%2520and%2520Setup%250Aimport%2520matplotlib.pyplot%2520as%2520plt%250Aimport%2520pandas%2520as%2520pd%250Aimport%2520scipy.stats%2520as%2520st%250A%250A%2523%2520Study%2520data%2520files%250Amouse_metadata_path%2520%253D%2520%2522data%252FMouse_metadata.csv%2522%250Astudy_results_path%2520%253D%2520%2522data%252FStudy_results.csv%2522%250A%250A%2523%2520Read%2520the%2520mouse%2520data%2520and%2520the%2520study%2520results%250Amouse_metadata%2520%253D%2520pd.read_csv%28mouse_metadata_path%29%250Astudy_results%2520%253D%2520pd.read_csv%28study_results_path%29%250A%250A%2523%2520Combine%2520the%2520data%2520into%2520a%2520single%2520DataFrame%250A%250Amerged_data%2520%253D%2520pd.merge%28study_results%252Cmouse_metadata%252C%2520on%253D%2522Mouse%2520ID%2522%29%250A%2523%2520Display%2520the%2520data%2520table%2520for%2520preview%250Amerged_data.head%285%29%2520%250A)
+
 ## *Create bar charts and pie charts
 Display the number of unique mice IDs in the data, and then check for any mouse ID with duplicate time points. Display the data associated with that mouse ID, and then create a new DataFrame where this data is removed. Use this cleaned DataFrame for the remaining steps.
 ## *Calculate quartiles, find outliers, and create a box plot.
