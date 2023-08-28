@@ -16,26 +16,14 @@ The executive team has tasked you with generating all of the tables and figures 
 
 
 * ### [*Prepare the data](https://github.com/Fahr-khadija/data_visualisation#Prepare-the-data)
-  ## *Generate summary statistics.
+* ### [*Create bar charts and pie charts](https://github.com/Fahr-khadija/data_visualisation#Create-bar-charts-and-pie-charts)
+* ### [*Calculate quartiles, find outliers, and create a box plot.](https://github.com/Fahr-khadija/data_visualisation#Calculate-quartiles,-find-outliers,-and-create-a-box-plot.)
+* ### [*Create a line plot and a scatter plot](https://github.com/Fahr-khadija/data_visualisation#Create-a-line-plot-and-a-scatter-plot)
+* ### [*Calculate correlation and regression](https://github.com/Fahr-khadija/data_visualisation#Calculate-correlation-and-regression)
+* ### [*Generate summary statistics](https://github.com/Fahr-khadija/data_visualisation#Generate- summary-statistics)
+* ### [*Submit your final analysis](https://github.com/Fahr-khadija/data_visualisation#Submit-your-final-analysis)
 
-## *Create bar charts and pie charts.
-
-## *Calculate quartiles, find outliers, and create a box plot.
-
-## *Create a line plot and a scatter plot.
-
-## *Calculate correlation and regression.
-
-## *Submit your final analysis.
-
-
-Prepare the data
-  
-    * #### [Setting up libraries & lab instances](https://github.com/Fahr-khadija/phd#setup-the-lab-instance-with-libraries-and-verilog-files)
-    * #### [Simulation using iverilog Tool](https://github.com/Fahr-khadija/phd#simulation-using-iverilog-open-source-tool)
-    * #### [Synthesis using YOSYS Tool](https://github.com/Fahr-khadija/phd#synthesis-using-yosys-open-source-tool)
-
-Prepare the Data
+## *Prepare the Data
 Run the provided package dependency and data imports, and then merge the mouse_metadata and study_results DataFrames into a single DataFrame.
 
 Display the number of unique mice IDs in the data, and then check for any mouse ID with duplicate time points. Display the data associated with that mouse ID, and then create a new DataFrame where this data is removed. Use this cleaned DataFrame for the remaining steps.
