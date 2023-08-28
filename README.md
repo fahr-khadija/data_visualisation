@@ -28,9 +28,9 @@ Run the provided package dependency and data imports, and then merge the mouse_m
 and then check for any mouse ID with duplicate time points. 
 ![image](https://github.com/fahr-khadija/data_visualisation/blob/main/duplicat%20mice.png)
 Display the data associated with that mouse ID,
-![image]()
 and then create a new DataFrame where this data is removed. 
-![image]()
+![image](https://github.com/fahr-khadija/data_visualisation/blob/main/clean%20data.png)
+
 Use this cleaned DataFrame for the remaining steps.
 ## *Calculate quartiles, find outliers, and create a box plot.
 Display the updated number of unique mice IDs.
