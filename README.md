@@ -25,12 +25,13 @@ Run the provided package dependency and data imports, and then merge the mouse_m
 1-Display the number of unique mice IDs in the data,
 ![image](https://github.com/fahr-khadija/data_visualisation/blob/main/nbr%20of%20mice.png)
 
+and then check for any mouse ID with duplicate time points. 
 ![image]()
-<img src="">
-
-
-
-and then check for any mouse ID with duplicate time points. Display the data associated with that mouse ID, and then create a new DataFrame where this data is removed. Use this cleaned DataFrame for the remaining steps.
+Display the data associated with that mouse ID,
+![image]()
+and then create a new DataFrame where this data is removed. 
+![image]()
+Use this cleaned DataFrame for the remaining steps.
 ## *Calculate quartiles, find outliers, and create a box plot.
 Display the updated number of unique mice IDs.
 ## *Create a line plot and a scatter plot
