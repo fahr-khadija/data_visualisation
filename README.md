@@ -7,12 +7,6 @@ As a senior data analyst at the company, you've been given access to the complet
 
 The executive team has tasked you with generating all of the tables and figures needed for the technical report of the clinical study. They have also asked you for a top-level summary of the study results.
 ## Table Of Contents 
-### Instructions
-     This assignment is broken down into the following tasks:
-
-![image](https://github.com/fahr-khadija/data_visualisation/assets/100168693/92c858a7-7019-4a29-bf2d-d9c75461411a)
-<img src="">
-
 
 * ### [*Prepare the data](https://github.com/Fahr-khadija/data_visualisation#Prepare-the-data)
 * ### [*Create bar charts and pie charts](https://github.com/Fahr-khadija/data_visualisation#Create-bar-charts-and-pie-charts)
@@ -30,6 +24,9 @@ Run the provided package dependency and data imports, and then merge the mouse_m
 
 1-Display the number of unique mice IDs in the data,
 ![image](https://github.com/fahr-khadija/data_visualisation/blob/main/nbr%20of%20mice.png)
+
+![image]()
+<img src="">
 
 
 
