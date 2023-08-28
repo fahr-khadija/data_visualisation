@@ -26,9 +26,10 @@ The executive team has tasked you with generating all of the tables and figures 
 
 ## *Calculate correlation and regression.
 
-Submit your final analysis.
-## Table Of Contents 
- 
+## *Submit your final analysis.
+
+
+Prepare the data
   
     * #### [Setting up libraries & lab instances](https://github.com/Fahr-khadija/phd#setup-the-lab-instance-with-libraries-and-verilog-files)
     * #### [Simulation using iverilog Tool](https://github.com/Fahr-khadija/phd#simulation-using-iverilog-open-source-tool)
