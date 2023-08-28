@@ -20,21 +20,22 @@ The executive team has tasked you with generating all of the tables and figures 
 * ### [*Calculate quartiles, find outliers, and create a box plot.](https://github.com/Fahr-khadija/data_visualisation#Calculate-quartiles,-find-outliers,-and-create-a-box-plot.)
 * ### [*Create a line plot and a scatter plot](https://github.com/Fahr-khadija/data_visualisation#Create-a-line-plot-and-a-scatter-plot)
 * ### [*Calculate correlation and regression](https://github.com/Fahr-khadija/data_visualisation#Calculate-correlation-and-regression)
-* ### [*Generate summary statistics](https://github.com/Fahr-khadija/data_visualisation#Generate- summary-statistics)
+* ### [*Generate summary statistics](https://github.com/Fahr-khadija/data_visualisation#Generate-summary-statistics)
 * ### [*Submit your final analysis](https://github.com/Fahr-khadija/data_visualisation#Submit-your-final-analysis)
 
 ## *Prepare the Data
 Run the provided package dependency and data imports, and then merge the mouse_metadata and study_results DataFrames into a single DataFrame.
 ## *Create bar charts and pie charts
 Display the number of unique mice IDs in the data, and then check for any mouse ID with duplicate time points. Display the data associated with that mouse ID, and then create a new DataFrame where this data is removed. Use this cleaned DataFrame for the remaining steps.
-
+## *Calculate quartiles, find outliers, and create a box plot.
 Display the updated number of unique mice IDs.
-
+## *Create a line plot and a scatter plot
+## *Generate summary statistics
 Generate Summary Statistics
 Create a DataFrame of summary statistics. Remember, there is more than one method to produce the results you're after, so the method you use is less important than the result.
-
+## *Calculate correlation and regression
 Your summary statistics should include:
-
+## *Submit your final analysis
 A row for each drug regimen. These regimen names should be contained in the index column.
 
 A column for each of the following statistics: mean, median, variance, standard deviation, and SEM of the tumor volume.
