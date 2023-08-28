@@ -26,7 +26,7 @@ Run the provided package dependency and data imports, and then merge the mouse_m
 ![image](https://github.com/fahr-khadija/data_visualisation/blob/main/nbr%20of%20mice.png)
 
 and then check for any mouse ID with duplicate time points. 
-![image]()
+![image](https://github.com/fahr-khadija/data_visualisation/blob/main/duplicat%20mice.png)
 Display the data associated with that mouse ID,
 ![image]()
 and then create a new DataFrame where this data is removed. 
