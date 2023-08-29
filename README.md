@@ -45,6 +45,8 @@ print("Number of unique mice:", num_unique_mice)
 
 ## *Create a line plot and a scatter plot
 ![image]()
+![image](https://github.com/fahr-khadija/data_visualisation/assets/100168693/6d0c7701-0aa2-4787-93fc-75b9f44cf0a7)
+
 ## *Generate summary statistics
 Generate Summary Statistics
 Create a DataFrame of summary statistics. Remember, there is more than one method to produce the results you're after, so the method you use is less important than the result.
