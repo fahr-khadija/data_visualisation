@@ -52,8 +52,16 @@ and then create a new DataFrame where this data is removed.
 
 Use this cleaned DataFrame for the remaining steps.
 ## *Calculate quartiles, find outliers, and create a box plot.
-Display the updated number of unique mice IDs.
 ```
+# Calculate the final tumor volume of each mouse across four of the treatment regimens:  
+# Capomulin, Ramicane, Infubinol, and Ceftamin
+# List of treatment regimens 
+treatment_regimens = ['Capomulin', 'Ramicane', 'Infubinol', 'Ceftamin']
+# Start by getting the last (greatest) timepoint for each mouse
+last_timepoint = clean_data.groupby("Mouse ID")["Timepoint"].max()
+last_timepoint_df = last_timepoint.reset_index()
+# Merge this group df with the original DataFrame to get the tumor volume at the last timepoint
+merged_last_timepoint = pd.merge(last_timepoint_df, clean_data, on=["Mouse ID", "Timepoint"])
 
 ```
 
@@ -64,18 +72,42 @@ Display the updated number of unique mice IDs.
 
 ## *Create a line plot and a scatter plot
 ```
+# Put treatments into a list for for loop (and later for plot labels)
+treatments = ["Capomulin", "Ramicane", "Infubinol", "Ceftamin"]
+# Create empty list to fill with tumor vol data (for plotting)
+tumor_volumes = []
+# Calculate the IQR and quantitatively determine if there are any potential outliers. 
+  # Locate the rows which contain mice on each drug and get the tumor volumes
+for treatment in treatments:
+    volumes = merged_last_timepoint.loc[merged_last_timepoint["Drug Regimen"] == treatment, "Tumor Volume (mm3)"]
+    tumor_volumes.append(volumes)
+for i, treatment in enumerate(treatments):
+    quartiles = tumor_volumes[i].quantile([0.25, 0.5, 0.75])
+    lower_q = quartiles[0.25]
+    upper_q = quartiles[0.75]
+    iqr = upper_q - lower_q
+   # Determine outliers using upper and lower bounds
+    lower_bound = lower_q - 1.5 * iqr
+    upper_bound = upper_q + 1.5 * iqr
+    outliers = tumor_volumes[i][(tumor_volumes[i] < lower_bound) | (tumor_volumes[i] > upper_bound)]
+    print(f"{treatment}'s potential outliers: {outliers}")    
+ 
+```
 
-```
-## *Generate summary statistics
-Generate Summary Statistics
-Create a DataFrame of summary statistics. Remember, there is more than one method to produce the results you're after, so the method you use is less important than the result.
-```
-
-```
 ## *Calculate correlation and regression
 Your summary statistics should include:
 ```
-
+# Calculate the correlation coefficient and a linear regression model 
+# for mouse weight and average observed tumor volume for the entire Capomulin regimen
+plt.scatter(mouse_weights, average_tumor_volume, marker='o', label='Data Points')
+regression_line = slope * mouse_weights + intercept
+plt.plot(mouse_weights, regression_line, color='red', label='Linear Regression')
+plt.title('Mouse Weight vs. Average Tumor Volume (Capomulin)')
+plt.xlabel('Mouse Weight (g)')
+plt.ylabel('Average Tumor Volume (mm3)')
+plt.legend()
+plt.grid(True)
+plt.show()
 ```
 
 ## *Submit your final analysis
