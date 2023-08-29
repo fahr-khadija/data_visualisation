@@ -28,7 +28,22 @@ Run the provided package dependency and data imports, and then merge the mouse_m
 
 1-Display the number of unique mice IDs in the data,
 ![image](https://github.com/fahr-khadija/data_visualisation/blob/main/nbr%20of%20mice.png)
+```
+# Generate a bar plot showing the total number of rows (Mouse ID/Timepoints) for each drug regimen using Pandas.
+# Group data by drug regimen and count the number of rows in each group
+regimen_counts = clean_data['Drug Regimen'].value_counts()
+# Create a bar plot using Pandas
+regimen_counts.plot(kind='bar', color='skyblue', alpha=0.7)
+# Set plot labels and title
+plt.xlabel('Drug Regimen')
+plt.ylabel('Number of Rows')
+plt.title('Total Number of Rows for Each Drug Regimen')
+# Rotate x-axis labels for better readability
+plt.xticks(rotation=90)
+# Display the plot
+plt.show()
 
+```
 and then check for any mouse ID with duplicate time points. 
 ![image](https://github.com/fahr-khadija/data_visualisation/blob/main/duplicat%20mice.png)
 Display the data associated with that mouse ID,
@@ -38,22 +53,30 @@ and then create a new DataFrame where this data is removed.
 Use this cleaned DataFrame for the remaining steps.
 ## *Calculate quartiles, find outliers, and create a box plot.
 Display the updated number of unique mice IDs.
-![image]()
+```
+
+```
+
 # Checking the number of mice in the clean DataFrame.
-num_unique_mice = clean_data['Mouse ID'].nunique()
-print("Number of unique mice:", num_unique_mice)
+```
+
+```
 
 ## *Create a line plot and a scatter plot
-![image]()
-![image](https://github.com/fahr-khadija/data_visualisation/assets/100168693/6d0c7701-0aa2-4787-93fc-75b9f44cf0a7)
+```
 
+```
 ## *Generate summary statistics
 Generate Summary Statistics
 Create a DataFrame of summary statistics. Remember, there is more than one method to produce the results you're after, so the method you use is less important than the result.
-![image]()
+```
+
+```
 ## *Calculate correlation and regression
 Your summary statistics should include:
-![image]()
+```
+
+```
 
 ## *Submit your final analysis
 ### Report
