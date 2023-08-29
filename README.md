@@ -65,11 +65,6 @@ merged_last_timepoint = pd.merge(last_timepoint_df, clean_data, on=["Mouse ID", 
 
 ```
 
-# Checking the number of mice in the clean DataFrame.
-```
-
-```
-
 ## *Create a line plot and a scatter plot
 ```
 # Put treatments into a list for for loop (and later for plot labels)
@@ -108,6 +103,7 @@ plt.ylabel('Average Tumor Volume (mm3)')
 plt.legend()
 plt.grid(True)
 plt.show()
+
 ```
 
 ## *Submit your final analysis
