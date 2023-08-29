@@ -11,7 +11,6 @@ The executive team has tasked you with generating all of the tables and figures 
 ### Report
 ##  https://github.com/fahr-khadija/data_visualisation/blob/main/Report.odt
 ## Table Of Contents 
-
 * ### [*Prepare the data](https://github.com/Fahr-khadija/data_visualisation#Prepare-the-data)
 * ### [*Generate summary statistics](https://github.com/Fahr-khadija/data_visualisation#Generate-summary-statistics)
 * ### [*Create bar charts and pie charts](https://github.com/Fahr-khadija/data_visualisation#Create-bar-charts-and-pie-charts)
