@@ -9,7 +9,7 @@ The executive team has tasked you with generating all of the tables and figures 
 ###  code ipynb
 ##  https://github.com/fahr-khadija/data_visualisation/blob/main/pymaceuticals_starter.ipynb
 ### Report
-##  https://github.com/fahr-khadija/data_visualisation/blob/main/report.od
+##  https://github.com/fahr-khadija/data_visualisation/blob/main/report.odt
 ## Table Of Contents 
 
 * ### [*Prepare the data](https://github.com/Fahr-khadija/data_visualisation#Prepare-the-data)
