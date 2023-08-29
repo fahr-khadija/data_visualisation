@@ -52,3 +52,6 @@ Create a DataFrame of summary statistics. Remember, there is more than one metho
 ## *Calculate correlation and regression
 Your summary statistics should include:
 ![image]()
+
+## *Submit your final analysis
+##  https://github.com/fahr-khadija/data_visualisation/blob/main/Report.odt
