@@ -26,8 +26,6 @@ Run the provided package dependency and data imports, and then merge the mouse_m
 
 ## *Create bar charts and pie charts
 
-1-Display the number of unique mice IDs in the data,
-![image](https://github.com/fahr-khadija/data_visualisation/blob/main/nbr%20of%20mice.png)
 ```
 # Generate a bar plot showing the total number of rows (Mouse ID/Timepoints) for each drug regimen using Pandas.
 # Group data by drug regimen and count the number of rows in each group
