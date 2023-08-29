@@ -13,19 +13,28 @@ The executive team has tasked you with generating all of the tables and figures 
 ## Table Of Contents 
 
 * ### [*Prepare the data](https://github.com/Fahr-khadija/data_visualisation#Prepare-the-data)
+* ### [*Generate summary statistics](https://github.com/Fahr-khadija/data_visualisation#Generate-summary-statistics)
 * ### [*Create bar charts and pie charts](https://github.com/Fahr-khadija/data_visualisation#Create-bar-charts-and-pie-charts)
 * ### [*Calculate quartiles, find outliers, and create a box plot.](https://github.com/Fahr-khadija/data_visualisation#Calculate-quartiles,-find-outliers,-and-create-a-box-plot.)
 * ### [*Create a line plot and a scatter plot](https://github.com/Fahr-khadija/data_visualisation#Create-a-line-plot-and-a-scatter-plot)
 * ### [*Calculate correlation and regression](https://github.com/Fahr-khadija/data_visualisation#Calculate-correlation-and-regression)
-* ### [*Generate summary statistics](https://github.com/Fahr-khadija/data_visualisation#Generate-summary-statistics)
 * ### [*Submit your final analysis](https://github.com/Fahr-khadija/data_visualisation#Submit-your-final-analysis)
 
 ## *Prepare the Data
 Run the provided package dependency and data imports, and then merge the mouse_metadata and study_results DataFrames into a single DataFrame.
 ![image](https://github.com/fahr-khadija/data_visualisation/blob/main/carbon%20(1).png))
+## *Generate summary statistics
+```
+# A more advanced method to generate a summary statistics table of mean, median, variance, standard deviation,
+# and SEM of the tumor volume for each regimen (only one method is required in the solution)
+# Using the aggregation method, produce the same summary statistics in a single line
+summary_stats_advanced = clean_data.groupby('Drug Regimen')['Tumor Volume (mm3)'].agg(['mean', 'median', 'var', 'std', 'sem']) \
+                                      .rename(columns={'mean': 'Mean', 'median': 'Median', 'var': 'Variance', 'std': 'Standard Deviation', 'sem': 'SEM'})
 
+# Display the advanced summary statistics DataFrame
+print(summary_stats_advanced)
+```
 ## *Create bar charts and pie charts
-
 ```
 # Generate a bar plot showing the total number of rows (Mouse ID/Timepoints) for each drug regimen using Pandas.
 # Group data by drug regimen and count the number of rows in each group
